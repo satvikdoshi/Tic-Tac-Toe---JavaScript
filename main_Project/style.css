@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:ital@1&display=swap');
+
+* {
+    font-family: 'Bree Serif', serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.p{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+}
+#btnBackHelp{
+    width: 150px;
+    display: block;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#stepsImg{
+    
+    display: block;
+    width: 40%;
+    margin:10vh auto;
+}
+
+.page1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 340px;
+}
+.page1Btns{
+    margin: 10px 0;
+    font-size: 2.5rem;
+    padding: 9px;
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#logo{
+    display: inline-block;
+    margin: 3rem;
+    margin: 15rem 0 3rem 0;
+}
+button:hover{
+    background-color: rgb(51, 214, 255);
+}
+.container {
+    height: 60vh;
+    width: 38vw;
+    margin: 10vh auto;
+    position: relative;
+}
+
+body {
+    background-color: #38fd0069;
+    /* background-image: url('./Background1.jpg');
+    background-repeat: no-repeat; */
+}
+
+.grid {
+    display: grid;
+    /* border: 2px solid black; */
+    width: 30vw;
+    height: 55vh;
+    margin: 10vh auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.utility-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    cursor: pointer;
+}
+
+.common-div {
+    position: relative;
+
+}
+
+#div1,
+#div4,
+#div7 {
+    border-left: none;
+}
+
+#div7,
+#div8,
+#div9 {
+    border-bottom: none;
+}
+
+span {
+    font-size: 3rem;
+    font-weight: bolder;
+    position: relative;
+    left: 12rem;
+    color: #ff0000;
+}
+
+#playAgain {
+    right: 185px;
+    width: 9vw;
+}
+
+.multiPlayerBtns {
+    background-color: rgb(41 174 245 / 56%);
+    padding: 10px;
+    border-radius: 12px;
+    position: relative;
+    top: 75px;
+    font-size: x-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#quit {
+    right: 110px;
+    width: 9vw;
+}
+
+
+
+.horizentalLine {
+    animation-name: HLine;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, 0.43, 0.91, 1.27);
+    animation-iteration-count: infinite;
+}
+
+@keyframes HLine {
+    0% {
+        width: 0px;
+    }
+
+    25% {
+        width: 100px;
+    }
+
+    50% {
+        width: 200px;
+    }
+
+    75% {
+        width: 300px;
+
+    }
+
+    100% {
+        width: 450px;
+
+    }
+
+}
+
+.verticalLine {
+    animation-name: VLine;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, 0.43, 0.91, 1.27);
+    animation-iteration-count: infinite;
+}
+
+@keyframes VLine {
+    0% {
+        height: 0px;
+    }
+
+    25% {
+        height: 100px;
+    }
+
+    50% {
+        height: 200px;
+    }
+
+    75% {
+        height: 300px;
+
+    }
+
+    100% {
+        height: 440px;
+
+    }
+
+}
+
+.diagonalLine {
+    animation-name: DLine;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, 0.43, 0.91, 1.27);
+    animation-iteration-count: infinite;
+    transform-origin: top;
+}
+
+@keyframes DLine {
+    0% {
+        height: 0px;
+    }
+
+    25% {
+        height: 100px;
+    }
+
+    50% {
+        height: 200px;
+    }
+
+    75% {
+        height: 300px;
+
+    }
+
+    100% {
+        height: 425px;
+
+    }
+}
+
+.nav {
+    position: relative;
+}
+
+#playerFirst {
+    position: absolute;
+    left: 70%;
+    font-size: 2rem;
+
+
+}
+
+#playerSecond {
+    position: absolute;
+    top: 6vh;
+    left: 70%;
+    font-size: 2rem;
+
+}
+
+#result {
+    position: absolute;
+    left: 71%;
+    top: -7vh;
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+#playMusic {
+    position: absolute;
+    left: 7%;
+    top: -7vh;
+    font-size: 2rem;
+}
+
+select {
+    display: inline;
+    position: absolute;
+    left: 22.5%;
+    width: 13vw;
+    top: -3.5vh;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+.utility-text-center{
+    text-align: center;
+}
